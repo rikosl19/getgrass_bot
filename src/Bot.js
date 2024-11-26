@@ -62,6 +62,7 @@ class Bot {
         : new SocksProxyAgent(formattedProxy);
 
       const wsURL = `wss://${this.config.wssHost}`;
+      
       const ws = new WebSocket(wsURL, {
         agent,
         headers: {
